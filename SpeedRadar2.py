@@ -7,7 +7,7 @@ end = 0
 tracker = EuclideanDistTracker()
 
 #cap = cv2.VideoCapture("Resources/traffic3.mp4")
-cap = cv2.VideoCapture(r"C:\Users\shiva\OneDrive\Desktop\SpeedRadar-OpenCV--main\traffic4.mp4")
+cap = cv2.VideoCapture(r"C:\Users\shiva\OneDrive\Desktop\Speedo\traffic4.mp4")
 f = 25
 w = int(1000/(f-1))
 
@@ -88,7 +88,7 @@ while True:
     #DISPLAY
     #cv2.imshow("Mask",mask2)
     #cv2.imshow("Erode", e_img)
-    cv2.imshow("ROI", roi)
+    cv2.imshow("Speedo", roi)
 
     key = cv2.waitKey(w-10)
     if key==27:
